@@ -1,11 +1,22 @@
-apiVersion: 
-kind: 
-metadata:
-
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: myapppPod
+  labels:
+    app: myapp1
 spec:
+  containers:
+    - name:
+      image:
+      ports:
+        - container ports: 80
+    - name:
+      image:
+      ports:
+        - container ports: 81    
     
 # Types of Kubernetes Objects
-# Pod, ReplicaSet, Deployment, Service and many more
+# KIND = Pod, ReplicaSet, Deployment, Service and many more
 
 # apiVersion: version of k8s objects
 # kind: k8s objects 
